@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class LineComparison
+public class UC3
 {
     public static void main(String[] args)
     {
@@ -38,6 +38,20 @@ public class LineComparison
         else
         {
             System.out.println("lengths are not equal");
+        }
+        int compare=LineA.compareTo(LineB);
+        System.out.println("Value of comparison" + compare);
+        if(compare==0)
+        {
+            System.out.println("lines are equal");
+        }
+        else if(compare>0)
+        {
+            System.out.println("lineA is greater then lineB");
+        }
+        else
+        {
+            System.out.println("lineA is less than lineB");
         }
     }
 }
